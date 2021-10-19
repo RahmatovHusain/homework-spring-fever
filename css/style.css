@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2C343A;
+}
+.contaner{
+    padding: 100px 0;
+}
+
+.spring-box{
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.spring-box .img-box{
+    position: absolute;
+}
+
+.spring-box .spring-img{
+    width: 350px;
+    height: 500px;
+    opacity: .5;
+    border-radius: 5px;
+}
+
+.spring-box .spring-position {
+    width: 350px;
+    padding: 20px;
+}
+
+.spring-box .spring-title{
+    padding: 30px 0;
+    color: #2777e0;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.spring-box .spring-title::after{
+    content: ' ';
+    width: 60px;
+    height: 4px;
+    background-color: #D4BD56;
+    border-radius: 2px;
+    position: absolute;
+    right: 145px;
+    top: 95px;
+    display: inline-block;
+}
+
+.span-title{
+    color: rgba(241, 239, 239, 0.938);
+}
+
+.spring-text {
+    color: #2C343A;
+    padding: 30px 0;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+}
+
+.spring-date-box {
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    top: 460px;
+}
+
+.hidden-box {
+    position: absolute;
+    width: 90%;
+    top: 230px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+
+.spring-box:hover .hidden-box {
+    position: absolute;
+    top: 200px;
+    opacity: 1;
+}
+
+.spring-box:hover {
+    box-shadow: 0 1px 15px 4px #4a6d85;
+    transition: .5s;
+    
+}
+
+.spring-box:hover .spring-text{
+    color: bisque;
+    opacity: 1;
+}
+
+.spring-number {
+    margin-right: 10px;
+}
